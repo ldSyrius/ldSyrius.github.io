@@ -21,14 +21,20 @@
 		        </ul>
 		    </div>
 		    <div class="msg">
-		    	<p class="a1">Logic will get you from A to B.</br>Imagination will take you everywhere.</p>
+		    	<p class="a1"><b>Logic will get you from A to B.</br>Imagination will take you everywhere.</b></p>
 		    	<p class="a2">A.Einstein</p>
 		    </div>
 		</div>
 	</div>
 	<div class="about">
 		<div>
-			<p>test</p>
+			<ul id="self">
+				<li class="li"><b>Hi and Welcome to my portfolio page! My name is Darius I. C. Boteand </b></li>
+				<li class="li">My story starts in Romania during Christams in 1999. Having moved to France at the age of 2, I grew up learning two languages at once, which greatly benefited me for learning my third language Spanish. My world consisted at the time of anything related to art and sports: ranging from painting, drawing, pottery to swimming, running and martial arts.<br/><br/>Life offered me the opportunity to study in the United Kingdom, and so I chose to follow this path towards achieving an universitary BSc degree, and later finish with an MSc degree. My university experience allowed me to evolve as a person beyound what I have had hoped for, discovering various programming languages and cyber related topics, that I now can apply into my day-to-day life.<br/><br/>My goal in life is to evolve and create as many solutions as possible for the purpose of making the world better! And for this, I want to look at protecting it whilst keeping up with the ongoing evolving cyber threats.</li>
+			</ul>
+			<ul id="img">
+				<li><img class="self" src="src/self.jpeg" /></li>
+			</ul>
 		</div>
 	</div>
 </body>
@@ -144,9 +150,9 @@
     }
 
     #connect:hover{
-    	border: 2px solid rgb(12, 102, 194);
-    	background-color: rgb(12, 102, 194, 0.9);
-    	color: white !important;
+    	border: 2px solid rgb(12, 102, 194, 1);
+    	background-color: rgb(12, 102, 194, 1);
+    	color: rgba(255, 255, 255, 1);
     	vertical-align: center !important;
     }
 
@@ -187,20 +193,54 @@
 		border-top: 7vw solid transparent;
 		border-left: 65vw solid rgba(242, 233, 225, 1);
 		border-right: 25vw solid rgba(242, 233, 225, 1);
+
 	}
 
 	.about div {
 		position: absolute;
 		left:-60vw;
 		right: 10vw;
-		width: 100vw;
+		width: 70vw;
 		height: 100vh;
+		margin-left: 15vw;
+		margin-right: 15vw;
 		background-color: rgba(242, 233, 225, 1);
-		text-align: center;
 	}
 
-	.about div p {
-		padding-top: 20vh;
+	.about div ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style-type: none;
+		text-align: justify;
+        margin: 0;
+        padding: 0;
+		overflow: hidden;
+		color: rgb(9, 17, 26);
+	}
+
+	.about div ul .li {
+		padding-top: 80px;
+		height: 50vh;
+	}
+
+	.about div #self{
+		text-align: justify;
+		background-color: rgba(242, 233, 225, 1);
+		font-size: 1.4vw;
+	}
+	.about div #self b{
+		text-align: justify;
+		font-size: 3vw;
+	}
+
+	.about div #img{
+		background-color: rgb(9, 17, 26);
+		height:29vh;
+	}
+
+	.about div ul img {
+		height: 30vh;
 	}
 </style>
 
